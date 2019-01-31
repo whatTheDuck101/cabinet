@@ -40,7 +40,7 @@ body {
 }
 
 // BUTTON STYLING
-
+b,
 button,
 .button {
   border: none;
@@ -54,12 +54,12 @@ button,
     font-weight: bold;
   }
 }
-
+b,
 .button {
   color: white;
   margin: 2rem 0;
 }
-
+b,
 a {
   color: $green;
   text-decoration: none;
