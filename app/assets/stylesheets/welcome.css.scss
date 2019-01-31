@@ -1,13 +1,9 @@
-// Place all the styles related to the welcome controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+// index welcome
 #banner {
-  background-image: url(image_path("welcome_banner_image.jpg"));
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top center;
   width: 100%;
-  min-height: 500px;
+  min-height: 800px;
+  height: 300px;
+  max-height: 900px;
   display: table;
   .banner_content {
     display: table-cell;
@@ -44,12 +40,19 @@
 }
 
 #callouts {
-  background-image: url("callout_background.jpg");
+  background-image: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.3) 0%,
+      rgba(0, 0, 0, 0.3) 100%
+    ),
+    url("callout_background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: top center;
+  background-position: center;
   width: 100%;
   min-height: 400px;
+  height: 200px;
+  max-height: 600px;
   display: table;
   .callout_inner {
     display: table-cell;
@@ -67,18 +70,22 @@
     }
     p {
       color: rgba(255, 255, 255, 0.9);
+      margin-bottom: 2.5%;
     }
   }
 }
 
 #bottom_cta {
+  min-height: 300px;
+  height: 200px;
+  max-height: 500px;
   text-align: center;
-  padding: 7.5rem 0;
+  padding: 3.5rem 0;
   h2 {
     @include bold_font;
     color: $dark_gray;
     font-size: 3rem;
-    margin: 0;
+    margin-bottom: 1.5rem;
   }
   p {
     font-size: 1.25rem;
