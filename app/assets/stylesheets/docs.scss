@@ -1,9 +1,6 @@
-// Place all the styles related to the docs controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
 #docs {
   .doc {
-    background: #78594b;
+    background: #545e75;
     width: 90%;
     min-height: 100px;
     margin: 1rem 1%;
@@ -38,6 +35,10 @@
       font-size: 0.75rem;
       text-align: left;
     }
+    &:hover {
+      background: #2e3440;
+      cursor: pointer;
+    }
   }
 }
 
@@ -46,7 +47,7 @@
 #doc_show {
   .title {
     @include bold_font;
-    color: #78594b;
+    color: #2e3440;
     font-size: 2rem;
     margin-bottom: 1.25rem;
     padding-bottom: 1rem;
@@ -62,13 +63,19 @@
     margin-top: 3rem;
     text-align: center;
     a.button {
-      padding: 0.2rem 1.5rem;
-      border-radius: 0.1rem;
+      padding: 0.8rem 3rem;
+      border-radius: 10px;
       text-decoration: none;
       color: #529ecc;
-      border: 5px solid #529ecc;
+      border: 3px solid #529ecc;
+      text-transform: uppercase;
       @include bold_font;
       background: transparent;
     }
+  }
+  a.button:hover {
+    color: #2e3440;
+    border: 3px solid #2e3440;
+    cursor: pointer;
   }
 }
