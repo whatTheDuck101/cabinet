@@ -37,6 +37,7 @@
     }
     &:hover {
       background: #2e3440;
+      cursor: pointer;
     }
   }
 }
@@ -75,5 +76,6 @@
   a.button:hover {
     color: #2e3440;
     border: 3px solid #2e3440;
+    cursor: pointer;
   }
 }

@@ -1,12 +1,18 @@
 .form-actions {
   margin: 10px 0;
   input.btn {
-    color: #529ecc;
+    color: white;
     padding: 8px 36px;
-    background-color: white;
+    background-color: #529ecc;
     box-shadow: none;
-    border: 2px solid #529ecc;
+    border: 2px solid white;
     border-radius: 3px;
+  }
+  input.btn:hover {
+    color: #529ecc;
+    background-color: white;
+    border: 2px solid #529ecc;
+    cursor: pointer;
   }
 }
 
