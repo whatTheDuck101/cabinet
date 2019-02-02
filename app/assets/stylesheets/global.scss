@@ -61,25 +61,6 @@ b:hover {
     color: $green;
   }
 }
-// b,
-// .button {
-//   border: none;
-//   outline: none;
-//   background: $green;
-//   padding: 1rem 3.5rem;
-//   border-radius: 0.1rem;
-//   a {
-//     color: white;
-//     text-decoration: none;
-//     font-weight: bold;
-//   }
-//   &:hover {
-//     color: $green;
-//     background: white;
-//     border: 1px solid $green;
-//     cursor: pointer;
-//   }
-// }
 b,
 .button {
   color: white;
@@ -113,6 +94,15 @@ header {
   width: 100%;
   padding: 1.75rem 0;
   border-bottom: 1.5px solid #376490;
+  a {
+    color: white;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin-left: 1rem;
+    &:hover {
+      color: #b0d2e7;
+    }
+  }
   .header_inner {
     width: 90%;
     margin: 0 auto;
@@ -127,17 +117,6 @@ header {
     }
     nav {
       float: right;
-      a {
-        text-decoration: none;
-        color: white;
-        font-size: 1.1rem;
-        line-height: 1.5;
-        margin-left: 1rem;
-        &:hover {
-          color: $light_gray;
-          cursor: pointer;
-        }
-      }
     }
   }
 }
